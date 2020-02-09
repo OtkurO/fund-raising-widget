@@ -1,0 +1,23 @@
+.notification {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.button-link {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin-left: 3px;
+  padding: 0;
+  font: inherit;
+}
+
+.notification-success {
+  border-color: #1cbc2c;
+  background-color: #dff0d8;
+}

@@ -1,0 +1,14 @@
+.progressBar_container {
+  position: relative;
+  height: 12px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.progressBar_bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #20a1d4;
+  width: 75%;
+}
