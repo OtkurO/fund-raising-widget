@@ -3,23 +3,19 @@ const Reducer = (state, action) => {
     case 'ADD_DONATION':
       return {
         ...state,
-        currentAmount: state.currentAmount + action.payload,
+        currentAmount: state.currentAmount + Number(action.payload),
         donationMade: true,
       };
     case 'CLOSE_NOTIFICATION':
       return {
         ...state,
         donationMade: false,
+        error: false,
       };
     case 'SET_ERRORMADE':
       return {
         ...state,
         errorMade: true,
-      };
-    case 'CLEAR_ERRORMADE':
-      return {
-        ...state,
-        error: false,
       };
     default:
       return state;

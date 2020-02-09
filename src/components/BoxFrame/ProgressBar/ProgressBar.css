@@ -9,4 +9,5 @@
   top: 0px;
   left: 0px;
   bottom: 0px;
+  transition: width 0.3s ease-in;
 }

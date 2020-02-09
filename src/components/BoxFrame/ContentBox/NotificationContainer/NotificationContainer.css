@@ -21,3 +21,10 @@
   border-color: #1cbc2c;
   background-color: #dff0d8;
 }
+.notification-error {
+  border-color: #f84c35;
+  background-color: #f1a699;
+}
+.notification-normal {
+  visibility: hidden;
+}
