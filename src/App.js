@@ -1,5 +1,5 @@
 import React from 'react';
-import Tooltip from './components/Tooltip';
+import Tooltip from './components/Tooltip/Tooltip';
 import BoxFrame from './components/BoxFrame/BoxFrame';
 import Store from './contexts/Store';
 import './App.css';

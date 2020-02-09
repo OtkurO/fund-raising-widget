@@ -3,10 +3,11 @@ import { DonationContext } from '../../../../contexts/Store';
 import './NotificationContainer.css';
 
 const NotificationContainer = () => {
+  const [state, dispatch] = useContext(DonationContext);
   const handleButtonClick = event => {
     dispatch({ type: 'CLOSE_NOTIFICATION' });
+    document.querySelector('#fundraise_form').style.visibility = 'visible';
   };
-  const [state, dispatch] = useContext(DonationContext);
 
   const classNameToSet = state.errorMade
     ? 'notification notification-error'
@@ -14,7 +15,7 @@ const NotificationContainer = () => {
     ? 'notification notification-success'
     : 'notification notification-normal';
   const textToShow = state.errorMade
-    ? 'Please input a valid number. '
+    ? 'Please enter an integer number. '
     : state.donationMade
     ? 'Thank you for your pledge!'
     : '';

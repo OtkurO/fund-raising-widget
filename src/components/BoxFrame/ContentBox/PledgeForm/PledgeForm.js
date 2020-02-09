@@ -13,13 +13,17 @@ const PledgeForm = () => {
     } else {
       dispatch({ type: 'SET_ERRORMADE' });
       setFormValue('');
+      document.querySelector('#fundraise_form').style.visibility = 'hidden';
     }
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch({ type: 'ADD_DONATION', payload: formValue });
-    setFormValue('');
+    if (!state.errorMade && formValue) {
+      dispatch({ type: 'ADD_DONATION', payload: formValue });
+      setFormValue('');
+      document.querySelector('#fundraise_form').style.visibility = 'hidden';
+    }
   };
 
   return (

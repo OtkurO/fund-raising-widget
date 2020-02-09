@@ -10,7 +10,7 @@ const Reducer = (state, action) => {
       return {
         ...state,
         donationMade: false,
-        error: false,
+        errorMade: false,
       };
     case 'SET_ERRORMADE':
       return {

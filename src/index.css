@@ -1,8 +1,13 @@
 body {
   font-family: 'rooney-sans', Avenir-Book, Calibri, sans-serif;
   color: #424242;
+  background-color: #818181;
   line-height: 1.4;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h2 {
+  margin-block-start: 0em;
+  margin-inline-start: 30px;
 }

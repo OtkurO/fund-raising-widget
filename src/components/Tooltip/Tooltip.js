@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Tooltip.css';
-import { DonationContext } from '../contexts/Store';
+import { DonationContext } from '../../contexts/Store';
 
 const Tooltip = () => {
   const [state] = useContext(DonationContext);
